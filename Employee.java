@@ -24,10 +24,10 @@ public class Employee {
       return department;
     }
     public void displayDetails(){
-      System.out.println("Employee Name: " +name);
-       System.out.println("Employee ID: " +id);
-        System.out.println("Employee Salary: " +salary);
-         System.out.println("Employee Department: " +department);
+     System.out.println("Employee Name: " +name);
+     System.out.println("Employee ID: " +id);
+     System.out.println("Employee Salary: " +salary);
+     System.out.println("Employee Department: " +department);
+     System.out.println("------------------------");
     }
-
   }
