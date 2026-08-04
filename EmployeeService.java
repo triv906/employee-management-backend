@@ -11,5 +11,13 @@ public void addEmployee(Employee employee){
         emp.displayDetails();
     }
 }
+public Employee searchEmployee(int id){
+    for(Employee emp: employees){
+        if(emp.getId()==id){
+            return emp;
+        }
+    }
+     return null;
+    }
 }
 
