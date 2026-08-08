@@ -30,4 +30,7 @@ public class Employee {
      System.out.println("Employee Department: " +department);
      System.out.println("------------------------");
     }
+    public void setSalary(double salary){
+      this.salary=salary;
+    }
   }

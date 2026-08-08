@@ -19,5 +19,14 @@ public Employee searchEmployee(int id){
     }
      return null;
     }
-}
+    public void updateEmployee(int id,double newSalary){
+        Employee emp=searchEmployee(id);
+        if(emp!=null){
+            emp.setSalary(newSalary);
+            System.out.println("Employee salary updated successfully.");
+        }else{
+            System.out.println("Employee not found.");
+        }
+        }
+    }
 

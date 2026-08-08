@@ -6,11 +6,15 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         EmployeeService service = new EmployeeService();
+        Employee e1 = new Employee("Sindhuja", 122, 300000, "IT");
+        service.addEmployee(e1);
 
         System.out.println("========== Employee Management System ==========");
         System.out.println("1. Add Employee");
         System.out.println("2. Display Employees");
-        System.out.println("3. Exit");
+        System.out.println("3. Search Employee");
+        System.out.println("4. Update Employee");
+        System.out.println("5. Exit");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -38,14 +42,21 @@ public class Main {
                 break;
 
             case 4:
+                System.out.println("Enter Employee ID:");
+                int updateId=sc.nextInt();
+
+                System.out.println("Enter new salary:");
+                double newSalary=sc.nextDouble();
+
+                service.updateEmployee(updateId,newSalary);
+                break;
+                case 5:
                 System.out.println("Exiting...");
                 break;
-
                 default:
     System.out.println("Invalid Choice");
     }
 
         sc.close();
     }
-    EmployeeService service = new EmployeeService();
 }
