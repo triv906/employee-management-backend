@@ -8,13 +8,15 @@ public class Main {
         EmployeeService service = new EmployeeService();
         Employee e1 = new Employee("Sindhuja", 122, 300000, "IT");
         service.addEmployee(e1);
+        while (true) {
 
         System.out.println("========== Employee Management System ==========");
         System.out.println("1. Add Employee");
         System.out.println("2. Display Employees");
         System.out.println("3. Search Employee");
         System.out.println("4. Update Employee");
-        System.out.println("5. Exit");
+        System.out.println("5. Delete Employee");
+        System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -51,12 +53,20 @@ public class Main {
                 service.updateEmployee(updateId,newSalary);
                 break;
                 case 5:
+                    System.out.println("Enter Employee ID to delete:");
+                    int deleteId=sc.nextInt();
+                    service.deleteEmployee(deleteId);
+                    break;
+                case 6:
                 System.out.println("Exiting...");
-                break;
+                sc.close();
+                return;
+                
                 default:
     System.out.println("Invalid Choice");
-    }
+    
 
-        sc.close();
+            }
+       }
     }
 }

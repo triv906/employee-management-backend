@@ -28,5 +28,14 @@ public Employee searchEmployee(int id){
             System.out.println("Employee not found.");
         }
         }
+        public void deleteEmployee(int id){
+            Employee emp=searchEmployee(id);
+            if(emp!=null){
+                employees.remove(emp);
+                System.out.println("Employee deleted successfully.");
+            } else{
+                System.out.println("Employee not found.");
+            }
+        }
     }
 
