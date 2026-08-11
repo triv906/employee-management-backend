@@ -6,8 +6,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         EmployeeService service = new EmployeeService();
-        Employee e1 = new Employee("Sindhuja", 122, 300000, "IT");
-        service.addEmployee(e1);
         while (true) {
 
         System.out.println("========== Employee Management System ==========");
@@ -24,11 +22,34 @@ public class Main {
         switch (choice) {
 
             case 1:
-                System.out.println("Adding Employee...");
+                System.out.println("Enter Employee Name:");
+                String name=sc.next();
+                System.out.println("Enter Employee ID:");
+                int employeeId;
+                try{
+                    employeeId=sc.nextInt();
+                }
+                catch(Exception e){
+                    System.out.println("Please enter a valid number");
+                    break;
+                }
+                if(service.searchEmployee(employeeId)!=null){
+                    System.out.println("Employee ID already exists");
+                     break;
+                }  
+                    System.out.println("Enter Employee Salary:");
+                    double salary=sc.nextDouble();
+                    System.out.println("Enter Employee Department:");
+                    String department=sc.next();
+                    Employee employee=new Employee(name, employeeId, salary, department);
+                    service.addEmployee(employee);
+                System.out.println("Employee added successfully!");
                 break;
+
 
             case 2:
                 System.out.println("Displaying Employees...");
+                service.displayEmployees();
                 break;
 
             case 3:
