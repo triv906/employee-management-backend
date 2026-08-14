@@ -17,4 +17,5 @@ A Java Backend project built step by step while learning backend development.
 - Java
 
 ---
+
 More features will be added in upcoming sprints.
