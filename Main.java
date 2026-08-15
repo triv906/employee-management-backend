@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        EmployeeService service = new EmployeeService();
+       EmployeeService service = new EmployeeServiceImpl();
         while (true) {
 
         System.out.println("========== Employee Management System ==========");
