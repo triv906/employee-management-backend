@@ -6,6 +6,14 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         EmployeeService service = new EmployeeServiceImpl();
+        FullTimeEmployee fullTimeEmployee =
+        new FullTimeEmployee("Sindhuja", 122, 300000, "IT");
+
+        service.addEmployee(fullTimeEmployee);
+        Intern intern =
+        new Intern("Stuti", 125, 15000, "IT");
+
+         service.addEmployee(intern);
         while (true) {
 
             System.out.println("========== Employee Management System ==========");
