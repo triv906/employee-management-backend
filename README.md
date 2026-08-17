@@ -17,5 +17,6 @@ A Java Backend project built step by step while learning backend development.
 - Java
 
 ---
+Sprint 2: Learn how to store many employees.
 
 More features will be added in upcoming sprints.
