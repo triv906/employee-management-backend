@@ -4,7 +4,7 @@ A Java Backend project built step by step while learning backend development.
 
 ## Sprint Progress
 
-### ✅ Sprint 1 - Employee Registration Module
+### ✅ Sprint 1 --- Employee Registration Module
 
 ### Features
 - Employee Class
