@@ -17,6 +17,26 @@ A Java Backend project built step by step while learning backend development.
 - Java
 
 ---
-Sprint 2: Learn how to store many employees.
+✅ Sprint 2
+
+EmployeeService
+
+Learned:
+
+ArrayList
+addEmployee()
+displayEmployees()
+Service Layer
+---
+✅ Sprint 3
+
+Search Employee
+
+Learned:
+
+Linear Search
+searchEmployee()
+Menu
+Switch Case
 
 More features will be added in upcoming sprints.
