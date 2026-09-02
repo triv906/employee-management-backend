@@ -19,9 +19,6 @@ A Java Backend project built step by step while learning backend development.
 ---
 ✅ Sprint 2
 
-EmployeeService
-
-Learned:
 
 ArrayList
 addEmployee()
